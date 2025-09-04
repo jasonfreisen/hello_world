@@ -14,4 +14,4 @@ p <- ggplot(data = data_sst |> head(365),
 
 #export my plot
 ggsave(plot = p,
-       filename = "results/img/hello_world")
+       filename = "results/img/hello_world.pdf")
