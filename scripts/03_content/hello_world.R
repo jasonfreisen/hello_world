@@ -26,3 +26,12 @@ x <- ggplot(data = data_sst |> head(365),
   labs(title = "Sea Surface Temperature between 2000 - 2001")
 
 x
+
+# creating a red line for the sea surface temp chart
+
+x <- ggplot(data = data_sst |> head(365),
+       mapping = aes(x = date, y = temperature_C)) +
+  geom_line(colour = "red") +
+  labs(title = "Sea Surface Temperature between 2000 - 2001")
+
+x
