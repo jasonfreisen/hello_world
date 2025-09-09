@@ -15,3 +15,14 @@ p <- ggplot(data = data_sst |> head(365),
 #export my plot
 ggsave(plot = p,
        filename = "results/img/hello_world.pdf")
+
+#re-doing plot
+
+p
+
+x <- ggplot(data = data_sst |> head(365),
+       mapping = aes(x = date, y = temperature_C)) +
+  geom_line() +
+  labs(title = "Sea Surface Temperature between 2000 - 2001")
+
+x
